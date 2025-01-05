@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Link to CSS File-->
+    <link rel="stylesheet" href="./styles-home.css">
+    <!--Link to JS File-->
+    <script src="home-script.js"></script>
+    <!--Title-->
+    <title>WildPals | Home </title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <h1>WildPals</h1>
+        </div>
+
+        <nav class="menu">
+            <a href="#" class="menu-item active">
+                <img src="icons/home-active.png" alt="Home Icon" class="icon" />
+                <span class="text">Home</span>
+            </a>
+            <a href="quiz.html" class="menu-item">
+                <img src="icons/quiz.png" alt="Quiz Icon" class="icon" />
+                <span class="text">Your Quiz</span>
+            </a>
+            <a href="your-matches.html" class="menu-item">
+                <img src="icons/your-matches.png" alt="Matches Icon" class="icon" />
+                <span class="text">Your Matches</span>
+            </a>
+            <a href="#" class="menu-item">
+                <img src="icons/bookmark.png" alt="Saved Matches Icon" class="icon" />
+                <span class="text">Saved Matches</span>
+            </a>
+            <a href="#" class="menu-item">
+                <img src="icons/book.png" alt="Blog Icon" class="icon" />
+                <span class="text">Blog</span>
+            </a>
+        </nav>
+
+        <!-- <div class="user-section">
+            <div class="account-links">
+              <a href="#">Account Settings</a>
+              <a href="#">Edit Profile</a>
+              <a href="#">Logout</a>
+            </div>
+        </div> -->
+
+        <div class="profile">
+            <img src="images/profile-pic.png" alt="Profile Picture">
+            <div>
+                <strong>Stefania Vassiliadou</strong>
+                <br>
+                <small>stefaniavassiliadou@gmail.com</small>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <h1>Welcome back, Stefania! 🐾</h1>
+
+        <div class="container">
+            <div class="left-panel">
+                <div class="calendar-label">
+                    <h2>Social Events Happening on Campus</h2>
+                </div>
+                <div class="calendar-container">
+                    <table class="calendar">
+                        <thead>
+                            <tr>
+                                <th colspan="1"></th>
+                                <th class="nav-btn" onclick="alert('Previous month clicked!')"><img
+                                        src="icons/left-arrow.png" alt="Left Arrow" , width="7.5px"></th>
+                                
+                                <th colspan="3" class="month-header">December 2024</th>
+                                <th class="nav-btn" onclick="alert('Next month clicked!')"><img
+                                        src="icons/right-arrow.png" alt="Right Arrow" , width="7.5px"></th>
+                                <th colspan="1"></th>
+                            </tr>
+                            <tr class="weekdays">
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="pres-day">1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="events">
+                    <h2>On That Day...</h2>
+                    <div class="events-container">
+                        <div class="event-entry outdoors">
+                            <img src="images/outdoors.png" alt="Hike" , width="90px">
+                            <div class="event-entry-info">
+                                <p class="org-name">NU Outdoors</p>
+                                <p class="event-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id 
+                                    lorem quis turpis dignissim commodo. Proin gravida leo egestas 
+                                    libero molestie, eu aliquet libero semper. Praesent lacinia justo 
+                                    at mollis sollicitudin. Sed quis dapibus dui. Aliquam venenatis 
+                                    felis ut laoreet ornare. Donec at congue tortor.</p>
+                            </div>
+                        </div>
+                        <div class="event-entry cultural">
+                            <img src="images/food.png" alt="Hike" , width="90px">
+                            <div class="event-entry-info">
+                                <p class="org-name">MENA x BSA Cultural Mixer</p>
+                                <p class="event-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id 
+                                    lorem quis turpis dignissim commodo. Proin gravida leo egestas 
+                                    libero molestie, eu aliquet libero semper. Praesent lacinia justo 
+                                    at mollis sollicitudin. Sed quis dapibus dui. Aliquam venenatis 
+                                    felis ut laoreet ornare. Donec at congue tortor.</p>
+                            </div>
+                        </div>
+                        <div class="event-entry dance">
+                            <img src="images/ballet-shoes.png" alt="Hike" , width="90px">
+                            <div class="event-entry-info">
+                                <p class="org-name">Reflections Dance Company</p>
+                                <p class="event-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id 
+                                    lorem quis turpis dignissim commodo. Proin gravida leo egestas 
+                                    libero molestie, eu aliquet libero semper. Praesent lacinia justo 
+                                    at mollis sollicitudin. Sed quis dapibus dui. Aliquam venenatis 
+                                    felis ut laoreet ornare. Donec at congue tortor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <div class="blog">
+                    <h2>New on the WildPals Blog</h2>
+                    <div class="blog-entry">
+                        <img src="images/books.png" alt="Books" , width="90px">
+                        <div class="blog-entry-info">
+                            <p class="title">I Couldn’t Make friends in my Classes... Until a Friend Taught me This</p>
+                            <p class="author">by Emma Watson</p>
+                            <p class="date">1 January 2025</p>
+                        </div>
+                    </div>
+                    <div class="blog-entry">
+                        <img src="images/coffee.png" alt="Coffee" , width="90px">
+                        <div class="blog-entry-info">
+                            <p class="title">10 Coffee Spots in Downtown Chicago you Can’t Miss on a Friend Date</p>
+                            <p class="author">by Dwane "The Rock" Johnson</p>
+                            <p class="date">25 December 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="matches">
+                    <div class="title">
+                        <h2>While You Were Gone...</h2><br>
+                        <h3>We found you <strong>3</strong> new matches! Wow, we’re incredible, aren’t we?</h3>
+                    </div>
+
+                    <div class="profile-container">
+                        <div class="user-match">
+                            <img src="images/profile-1.png" alt="Profile Picture" , width="90px">
+                            <div class="profile-info">
+                                <p class="name">Maria Alvarez</p>
+                                <p class="compatibility">96% compatible</p>
+                            </div>
+                        </div>
+                        <div class="user-match">
+                            <img src="images/profile-2.png" alt="Profile Picture" , width="90px">
+                            <div class="profile-info">
+                                <p class="name">Josephine Bardot</p>
+                                <p class="compatibility">87% compatible</p>
+                            </div>
+                        </div>
+                        <div class="user-match">
+                            <img src="images/profile-3.png" alt="Profile Picture" , width="90px">
+                            <div class="profile-info">
+                                <p class="name">Ashwin Agarwal</p>
+                                <p class="compatibility">80% compatible</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
